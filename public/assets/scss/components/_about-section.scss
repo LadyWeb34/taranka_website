@@ -1,0 +1,43 @@
+.about-section {
+    position: relative;
+    min-height: 70vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: start;
+    &__container {
+
+    }
+
+    // .about-section__inner
+
+    &__inner {}
+
+    // .about-section__title
+
+    &__title {
+        padding: 0;
+        margin: 0;
+        word-spacing: 100vw;
+        color: var(--color-white);
+        margin-bottom: 20px;
+    }
+
+    // .about-section__description
+
+    &__description {
+        margin: 0;
+        padding: 0;
+        max-width: 430px;
+        color: var(--color-white);
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+}
+.section {
+}
+.container {
+}

@@ -1,0 +1,97 @@
+.footer {
+    width: 100%;
+    background-image: url('/assets/images/textured-background-dark.jpg');
+    background-size: 25%;
+    background-repeat: repeat;
+    background-position: center;
+    &__container {}
+
+    // .footer__inner
+
+    &__inner {}
+
+    // .footer__list
+
+    &__list {
+        margin: 0;
+        padding: 40px 0 40px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // .footer__list-item
+
+    &__list-item {}
+
+    // .footer__list-link
+
+    &__list-link {
+        text-transform: uppercase;
+        font-family: var(--font-akrobat-serif);
+        font-weight: 600;
+        font-size: 24px;
+        color: var(--color-white);
+        transition: color 200ms ease-out;
+        text-align: center;
+        &:hover{
+            color: var(--color-accent);
+        }
+    }
+
+    // .footer__copyright
+
+    &__copyright {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    // .footer__copyright-left
+
+    &__copyright-left {
+        grid-column: 3 span;
+        text-align: left;
+    }
+
+    // .footer__copyright-center
+
+    &__copyright-center {
+        grid-column: 6 span;
+        text-align: center;
+    }
+    &__copyright-right {
+        grid-column: 3 span;
+        text-align: right;
+    }
+    // .footer__copyright-link
+
+    &__copyright-link {
+        font-weight: 300;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+        position: relative;
+        transition: color 200ms linear;
+        &:hover{
+            color: var(--color-accent);
+            &::after{
+                opacity: 0;
+            }
+        }
+        &::after{
+            width: 100%;
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            border: 1px dashed rgba(255, 255, 255, 0.3);
+            opacity: 1;
+            transition: opacity 200ms linear;
+        }
+    }
+    &__copyright-text {
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+}

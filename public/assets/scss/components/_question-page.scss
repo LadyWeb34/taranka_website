@@ -1,0 +1,36 @@
+.question-section {
+    padding: 100px 0;
+    &__container {}
+
+    // .question-section__inner
+
+    &__inner {}
+
+    // .question-section__headline
+
+    &__headline {
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-bottom: 4.875rem;
+    }
+
+    // .question-section__title
+
+    &__title {
+        padding: 0;
+        margin: 0;
+    }
+
+    // .question-section__content
+
+    &__content {
+        width: 100%;
+    }
+
+    // .question-section__list
+
+    &__list {
+        width: 100%;
+    }
+}
+

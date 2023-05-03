@@ -1,0 +1,119 @@
+.header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    &__container {}
+
+    // .header__inner
+
+    &__inner {
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+    &__col-block{
+        display: flex;
+        &:nth-child(1){
+            flex: 1;
+            justify-content: flex-start;
+            @include md{
+                flex: auto;
+            }
+        }
+        &:nth-child(2){
+            flex: 2;
+            justify-content: center;
+            @include md{
+                flex: auto;
+            }
+        }
+        &:nth-child(3){
+            flex: 1;
+            justify-content: flex-end;
+            @include md{
+                flex: auto;
+            }
+        }
+    }
+    // .header__info
+
+    &__info {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+    }
+
+    // .header__info-item
+
+    &__info-item {
+        align-items: center;
+        gap: 8px;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: var(--color-white);
+        @include md{
+            font-size: 8px;
+            font-weight: 700;
+            flex-wrap: no-wrap;
+        }
+        opacity: .7;
+        i{
+            color: var(--color-accent);
+        }
+    }
+
+    // .header__logo
+
+    &__logo {}
+
+    // .header__btn-menu
+
+    &__btn-menu {
+        background-color: transparent;
+        border: none;
+        color: var(--color-white);
+        font-size: 12px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        opacity: .7;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 200ms linear;
+        &:hover{
+            color: var(--color-accent);
+            opacity: .7;
+        }
+        i{
+            color: var(--color-accent);
+            font-size: 18px;
+        }
+    }
+}
+.logo-brand {
+
+    // .logo-brand__img
+
+    &__img {
+        @include md{
+            height: 48px;
+        }
+    }
+}
+.header--black-font{
+    span{
+        color: var(--color-black);
+    }
+    a{
+        color: var(--color-black) !important;
+    }
+    button{
+        color: var(--color-black);
+    }
+}

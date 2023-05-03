@@ -1,0 +1,78 @@
+.accordion {
+    margin: 0;
+    padding: 0;
+    max-width: 585px;
+    margin: 0 auto;
+    &__item {
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+
+    // .accordion__article
+
+    &__article {}
+
+    // .accordion__article-header
+
+    &__article-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    // .accordion__article-question
+
+    &__article-question {
+        margin: 0;
+        padding: 0;
+        font-size: 22px;
+        text-transform: uppercase;
+        min-width: 230px;
+    }
+    .divider{
+        margin: 0 10px;
+    }
+    // .accordion__article-icon
+
+    &__article-icon {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 30px;
+        height: 30px;
+        border: 2px solid var(--color-accent);
+        border-radius: 50%;
+        cursor: pointer;
+        line-height: 0;
+        transition: all 200ms ease-out;
+        &:hover{
+            background-color: var(--color-accent);
+        }
+    }
+
+    // .accordion__article-content
+
+    &__article-content {
+        height: 0;
+        overflow: hidden;
+        transition: all 200ms ease-in-out;
+    }
+
+    // .accordion__article-text
+
+    &__article-text {
+        margin: 0;
+        padding: 0;
+        opacity: .9;
+        font-size: 18px;
+    }
+}
+// .accordion__item--active .accordion__article-content{
+//     height: auto;
+// }
+.accordion__item--active .accordion__article-header{
+    margin-bottom: 15px;
+}
