@@ -54,6 +54,7 @@ return array(
     'App\\Models\\Question' => $baseDir . '/app/Models/Question.php',
     'App\\Models\\Setting' => $baseDir . '/app/Models/Setting.php',
     'App\\Models\\User' => $baseDir . '/app/Models/User.php',
+    'App\\Notifications\\TelegramMsg' => $baseDir . '/app/Notifications/TelegramMsg.php',
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\Providers\\AuthServiceProvider' => $baseDir . '/app/Providers/AuthServiceProvider.php',
     'App\\Providers\\BroadcastServiceProvider' => $baseDir . '/app/Providers/BroadcastServiceProvider.php',
